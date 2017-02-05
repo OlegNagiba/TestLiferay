@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<server AGENT_PORT="29998" auto-publish-time="0" hostname="localhost" id="Liferay 7.x at localhost" name="Liferay 7.x at localhost" password="test" runtime-id="Liferay 7.x" server-type="com.liferay.ide.server.portal" server-type-id="com.liferay.ide.server.portal" start-timeout="900" stop-timeout="300" timestamp="4">
+  <list key="modules" value0="test::com.liferay.ide.project.core.bundleFactory:test::liferay.bundle::1.0"/>
+</server>

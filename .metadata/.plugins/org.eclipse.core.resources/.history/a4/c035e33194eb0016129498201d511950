@@ -1,0 +1,20 @@
+buildscript {
+	dependencies {
+		classpath group: "com.liferay", name: "com.liferay.gradle.plugins.workspace", version: "1.2.0",
+		classpath "biz.aQute.bnd:biz.aQute.bnd.gradle:3.3.0"
+	}
+
+	repositories {
+		maven {
+			url "https://cdn.lfrs.sl/repository.liferay.com/nexus/content/groups/public"
+		}
+	}
+}
+
+plugins {
+  id "biz.aQute.bnd" version "3.3.0"
+}
+
+apply plugin: "com.liferay.workspace"
+apply plugin: "biz.aQute.bnd"
+

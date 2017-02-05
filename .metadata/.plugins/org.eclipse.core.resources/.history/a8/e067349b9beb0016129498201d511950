@@ -1,0 +1,25 @@
+package test.portlet;
+
+import java.util.Map;
+
+import org.osgi.service.component.annotations.Activate;
+import org.osgi.service.component.annotations.Component;
+import org.osgi.service.component.annotations.Modified;
+
+@Component(configurationPid = "com.liferay.docs.exampleconfig.ExampleConfiguration")
+public class MyAppManager {
+
+    public String getFavoriteColor(Map colors) {
+       return colors.get(_configuration.favoriteColor());
+    }
+
+    @Activate
+    @Modified
+    protected void activate(Map<String, Object> properties) {
+        _configuration = Configurable.createConfigurable(
+        ExampleConfiguration.class, properties);
+    }
+
+    private volatile ExampleConfiguration _configuration;
+
+}

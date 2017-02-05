@@ -1,0 +1,21 @@
+package test.portlet;
+
+@Meta.OCD(id = "com.foo.bar.MyAppConfiguration")
+public interface MyAppConfiguration {
+
+    @Meta.AD(
+        deflt = "blue",
+        required = false
+    )
+    public String favoriteColor();
+
+    @Meta.AD(
+       deflt = "red|green|blue",
+       required = false
+    )
+    public String[] validLanguages();
+
+    @Meta.AD(required = false)
+    public int itemsPerPage();
+
+}

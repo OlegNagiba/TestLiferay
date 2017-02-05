@@ -1,0 +1,10 @@
+<%@ include file="/init.jsp" %>
+
+<liferay-frontend:add-menu>
+    <liferay-frontend:add-menu-item title='<%= LanguageUtil.get(request,
+    "titleName") %>' url="<%= nameURL.toString() %>" />
+</liferay-frontend:add-menu>
+
+<p>
+	<b><liferay-ui:message key="test.caption"/></b>
+</p>

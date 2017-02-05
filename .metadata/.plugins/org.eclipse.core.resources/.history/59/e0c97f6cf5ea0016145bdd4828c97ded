@@ -1,0 +1,13 @@
+<%@ include file="/init.jsp" %>
+
+<liferay-util:get-url url="https://www.google.com/" var="google" />
+
+<aui:form action="<%= myActionURL %>" method="post" name="myForm">
+        <aui:input label="My Text Input" name="myTextInput" type="text" 
+        value='<%= "My Text Value" %>' />
+
+        <aui:button type="submit" />
+</aui:form>
+<p>
+	<b><liferay-ui:message key="test.caption"/></b>
+</p>

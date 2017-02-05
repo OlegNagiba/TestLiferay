@@ -1,0 +1,12 @@
+<%@ include file="/init.jsp" %>
+
+<aui:nav-bar cssClass="collapse-basic-search" markupView="lexicon">
+
+<liferay-frontend:add-menu>
+    <liferay-frontend:add-menu-item title='<%= LanguageUtil.get(request,
+    "titleName") %>' url="<%= nameURL.toString() %>" />
+</liferay-frontend:add-menu>
+
+<p>
+	<b><liferay-ui:message key="test.caption"/></b>
+</p>

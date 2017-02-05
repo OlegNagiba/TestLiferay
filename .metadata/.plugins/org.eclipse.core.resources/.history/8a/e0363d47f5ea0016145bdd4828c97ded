@@ -1,0 +1,14 @@
+<%@ include file="/init.jsp" %>
+
+<liferay-util:get-url url="https://www.google.com/" var="google" />
+
+<div>
+        <h2>We stole <a href="https://www.google.com/">Google</a>, here it is.</h2>
+
+        <div class="google">
+                <%= google %>
+        </div>
+</div>
+<p>
+	<b><liferay-ui:message key="test.caption"/></b>
+</p>
